@@ -8,10 +8,10 @@
 <body>
     <form action="cadastro.php" method="post">
         <p><label for="iusuario"> Usúario:</label>
-            <input type="text" name="usuario" id="iusuario" required>
+            <input type="text" name="usuario" id="iusuario" autocomplete="off" required minlength="5" maxlength="10" size="10" placeholder="Nome">
         </p>
         <p><label for="isenha"> Senha: </label>
-        <input type="password" name="Senha" id="isenha" required>
+        <input type="password" name="Senha" id="isenha" required minlength="8" maxlength="10" size="10" placeholder="max de 10">
         </p>
         <p>
             <input type="submit" value="enviar">
