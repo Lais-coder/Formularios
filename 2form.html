@@ -8,62 +8,96 @@
         div{
             background-color: black;
         }
+        legend{
+            text-align: center;
+            font-size: 40px;
+        }
     </style>
 </head>
 <body>
-    <form action="cadastro.php" method="post">
-        <p><label for="iusuario"> Usúario:</label>
-            <input type="text" name="usuario" id="iusuario" autocomplete="off" required minlength="5" maxlength="10" size="10" placeholder="Nome">
-        </p>
-        <p><label for="isenha"> Senha: </label>
-        <input type="password" name="Senha" id="isenha" required minlength="8" maxlength="10" size="10" placeholder="max de 10">
-        </p>
-        <p>
-            <input type="submit" value="enviar">
-            <input type="reset" volue="Limpar">
-        </p>
-    </form>
-    <div><br></div>
-    <h1>Outro teste de formulario</h1>
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="inome">Nome</label>
-            <input type="text" name="Nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
-    <div><br></div>
-    <form action="cadastro.php">
-            <h1>formulario number</h1>
-            <p>
-                <label for="imedia">Média</label>
-                <input type="number" name="media" id="imedia" min="0" max="10" required>
+    <fieldset>
+        <form action="cadastro.php" method="post">
+            <p><label for="iusuario"> Usúario:</label>
+                <input type="text" name="usuario" id="iusuario" autocomplete="off" required minlength="5" maxlength="10" size="10" placeholder="Nome">
+            </p>
+            <p><label for="isenha"> Senha: </label>
+            <input type="password" name="Senha" id="isenha" required minlength="8" maxlength="10" size="10" placeholder="max de 10">
             </p>
             <p>
-                <input type="submit" value="Enviar">
-            </p>
-    </form>
-    <div><br></div>
-    <h1>Formulario Email</h1>
-        <form action="cadastro.php">
-            <p>
-                <label for="iemail">Email</label>
-                <input type="email" name="email" id="iemail" required autocomplete="email">
-                <input type="submit" value="Enviar">
+                <input type="submit" value="enviar">
+                <input type="reset" volue="Limpar">
             </p>
         </form>
-        <div><br></div>
-        <h1>Formulario com Telefone</h1>
+    </fieldset>
+    <br>
+    <div><br></div>
+    <h1>Outro teste de formulario</h1>
+    <fieldset>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="Nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+    <br>
+    <div><br></div>
+    <br>
+    <fieldset>
         <form action="cadastro.php">
+                <h1>formulario number</h1>
+                <p>
+                    <label for="imedia">Média</label>
+                    <input type="number" name="media" id="imedia" min="0" max="10" required>
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+        </form>
+    </fieldset>
+    <br>
+    <div><br></div>
+    <h1>Formulario Email</h1>
+        <fieldset>
+            <form action="cadastro.php">
+                <p>
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" required autocomplete="email">
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
+        </fieldset>
+            <div><br></div>
+            <h1>Formulario com Telefone</h1>
+            <form action="cadastro.php">
+        
             <p>
                 <label for="itelefone">Telefone</label>
                 <input type="tel" name="telefone" id="itelefone" autocomplete="tel" required pattern="^[0-9]{5,4}-[0-9]{4}" placeholder="(xx) xxxxx-xxxx" >
             </p>
             <input type="submit" value="Enviar">
-
         </form>
-</body>
+        <br>
+    <div><br></div>
+        <form action="cadastro.php">
+            <fieldset>
+                <legend>Espostes favoritos</legend>
+                <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+                <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br>
+                <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+                <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+            </fieldset>
+            <fieldset>
+                <legend>SEXO</legend>
+                <input type="radio" name="sexo" id="isxmas"> <label for="isxmas">Masculino</label>
+                <input type="radio" name="sexo" id="isxfem"> <label for="isxfem">Feminino</label>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </body>
 </html>
